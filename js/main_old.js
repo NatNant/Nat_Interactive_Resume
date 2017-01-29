@@ -49,29 +49,20 @@ function setDynamicTopPadding(){
 	$("#topNav").css("height", topNav_Container_h+'px');
 	$('.page2').css("height", topNav_Container_h+'px');
 	$('.page3').css("height", topNav_Container_h+'px');
-	
+	$("#page1_inner").css("margin-top", topNav_Container_h+'px');
 	//$("#page2_inner").css("margin-top", topNav_Container_h+'px');
 	//$("#page3_inner").css("margin-top", topNav_Container_h+'px');
 
 	var windowHeight = $(window).height();
 	//var windowWidth = $(window).width();
-  
 
-  var page1_inner_h = windowHeight - topNav_Container_h;
-  $('.row.page1_row1').css("height", page1_inner_h*0.7+'px');
-  var page1_row1_h = $('.row.page1_row1').height();
-   $('.row.page1_row2').css("height", page1_inner_h*0.3+'px');
-  //alert(page1_row1_h);
 	//for page 1
-  $("#page1_inner").css("margin-top", topNav_Container_h+'px');
-	$('#page1_inner').css("height", page1_inner_h+'px');
+	$('#page1_inner').css("height", windowHeight - topNav_Container_h+'px');
+	var pageOneRowTwo_h = windowHeight/3 - topNav_Container_h;
+	var pageOneRowOne_h = windowHeight - pageOneRowTwo_h - topNav_Container_h;
+	$('.page1_row1').css("height", pageOneRowOne_h+'px');
+	$('.page1_row2').css("height", pageOneRowTwo_h +'px');
 
-  $('#aboutME_cell').prev().css("height", page1_row1_h*0.3+'px');
-  $('#aboutME_cell').css("height", page1_row1_h*0.7+'px');
-  $('#project_cell').next().css("height", page1_row1_h*0.3+'px');
-  $('#project_cell').css("height", page1_row1_h*0.7+'px');
-	
-  
 	//for page 2
 	$('#page2_inner').css("height", windowHeight - topNav_Container_h+'px');
 	$('#page3_inner').css("height", windowHeight - topNav_Container_h+'px');

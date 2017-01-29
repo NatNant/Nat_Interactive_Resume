@@ -1,0 +1,235 @@
+
+
+ #container { display:block; }
+
+@media only screen and (orientation:portrait){
+
+  #container {
+
+    height: 100vw;
+
+    -webkit-transform: rotate(90deg);
+
+    -moz-transform: rotate(90deg);
+
+    -o-transform: rotate(90deg);
+
+    -ms-transform: rotate(90deg);
+
+    transform: rotate(90deg);
+
+  }
+
+}
+
+@media only screen and (orientation:landscape){
+
+  #container {
+
+     -webkit-transform: rotate(0deg);
+
+     -moz-transform: rotate(0deg);
+
+     -o-transform: rotate(0deg);
+
+     -ms-transform: rotate(0deg);
+
+     transform: rotate(0deg);
+
+  }
+
+}
+
+
+
+
+
+/*Bootstrap override*/
+@font-face {
+    font-family: "ONEDAY";
+    src:url("../font/Oneday-Font/ONEDAY.ttf");
+    src:url("../font/Oneday-Font/ONEDAY.otf");
+}
+
+@font-face {
+    font-family: "KingBasil";
+    src:url("../font/King-Basil-Lite-Free/King-Basil-Lite.otf");
+}
+
+@font-face {
+    font-family: "PlaylistCaps";
+    src:url("../font/Playlist-Font_pixelo/PlaylistCaps.otf");
+}
+@font-face {
+    font-family: "PlaylistScript";
+    src:url("../font/Playlist-Font_pixelo/PlaylistScript.otf");
+}
+
+@font-face {
+    font-family: "girlNextDoor";
+    src:url("../font/The_Girl_Next_Door/TheGirlNextDoor.ttf");
+}
+
+
+body{
+	font-family: 'PlaylistCaps' !important;
+	height:100%;
+}
+
+img#me_pic{
+	max-height: 100%;
+	max-width:100%;
+	float: left;
+}
+.navbar-brand{
+	color: black !important;
+}
+
+.navbar-fixed-top{
+	border-width: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+
+/*Newly created*/
+.girlNextDoorFont{
+	font-family: 'girlNextDoor', cursive !important;
+}
+p{
+	font-size: 1.2vw;
+
+}
+
+#collapseNav{
+	box-shadow:none; 
+  	border:none;
+  	background-color: rgba(148, 51, 31, .3);
+  	top: 50px;
+  	position: inherit;
+}
+
+#topNav{	
+	background-color: rgba(148, 51, 31, 0.5);
+}
+
+
+
+#navbarButton{
+	height: 3vw;
+	width:3vw;	
+}
+
+#footer{
+	position: absolute;
+	
+}
+
+#page1{	
+	position: relative;
+}
+#page1:after {
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+ 	background-image: url('../img/firstPage_dandelion.jpg');
+	background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;    
+}
+#page1_inner{
+	height: 100%;
+}
+
+.page1_row1{
+	min-height: 300px;
+}
+.page1_row2{
+	min-height: 100px;
+}
+.page1_row1_col1{
+	height: 100%;
+	position: relative;
+
+}
+.page1_row1_col3{
+	height: 100%;
+	position: relative;
+}
+
+#aboutME_cell , #project_cell{
+	width: 100%;
+	max-height: 70%;
+	
+	position: absolute;
+	display: flex;
+  	align-items: center;
+  	justify-content: center ;
+
+
+}
+#aboutME_cell{
+	bottom: 0;
+	background-color: rgba(159, 68, 18, 0.78);
+}
+#project_cell{
+	top:0;
+	background-color: rgba(148, 51, 31, 0.26);
+}
+#project_cell  img ,#aboutME_cell img, #skills_cell img {
+	max-height: 100%;
+	max-width: 100%;
+	z-index: 100;   
+	object-fit: contain;
+
+}
+
+.page1_row2_col2{
+	height: 100%;
+	position: relative;
+}
+
+#skills_cell{
+	display: flex;
+  	align-items: center;
+  	justify-content: center ;
+	background-color: rgba(148, 51, 31, 0.26);	
+	max-height: 100%;
+	width: 100%;
+}
+
+
+
+#page2 , #page3{
+	background-color: gray;
+
+}
+#page2_inner{
+	min-height: 200px;
+	background-color: yellow;
+
+}
+#page3_inner{
+	min-height: 200px;
+	background-color: blue;
+}
+
+.red{
+	background-color: rgba(255, 0, 0, 0.3);
+}
+
+.green{
+	background-color: rgba(0, 255, 0, 0.3);
+}
+.blue{
+	background-color: rgba(0, 0, 255, 0.3);
+}

@@ -36,18 +36,18 @@ var main = function() {
       $(this).slideUp(1000).slideDown(1000,openDialog("#edu_dialog"));
     });
     $('#pro_dev').click(function(){
-      $(this).fadeOut(1000).fadeIn(1000,setDialog('#pro_dev_dialog'););
+      $(this).fadeOut(1000).fadeIn(1000,openDialog('#pro_dev_dialog'));
     });
     $('#other_info').click(function(){
-      $(this).effect("slide", { direction: "right" }, 1000, setDialog('#other_info_dialog'));
+      $(this).effect("slide", { direction: "right" }, 1000,openDialog('#other_info_dialog'));
     });
     $('#projects').click(function(){
       $(this).hide( "fold", {horizFirst: true }, 1000 );
-      $(this).show( "fold", {horizFirst: true }, 1000 ,setDialog('#projects_dialog'));
+      $(this).show( "fold", {horizFirst: true }, 1000 ,openDialog('#projects_dialog'));
     });
     $('#skills').click(function(){
       $(this).hide( "clip", {horizFirst: true }, 1000 );
-      $(this).show( "clip", {horizFirst: true }, 1000,setDialog('#skills_dialog') );
+      $(this).show( "clip", {horizFirst: true }, 1000,openDialog('#skills_dialog') );
     });
 
     
@@ -137,7 +137,6 @@ function openDialog(dialogID_param){
       pageToLoad = 'pages/skills.html';
 }
 
-alert('dialogID :'+dialogID); 
   $(dialogID).load(pageToLoad, function() {
         $(dialogID).dialog("open");
   });

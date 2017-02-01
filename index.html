@@ -18,7 +18,7 @@
   <nav class="navbar navbar-default navbar-fixed-top" id="topNav">
     <div class="container-fluid" id="topNav_Container">
       <div class="navbar-header">
-        <div class="navbar-brand" href="#">Phochanat Nantabutr<img  id='me_pic' src="img/me.png"></div>
+        <div class="navbar-brand PlaylistCaps" href="#">Phochanat Nantabutr<img  id='me_pic' src="img/me.png"></div>
       </div>  
       <div class="navbar-right">
         <li id='navbarButton_li'><img  id='navbarButton' src="img/nav_menu.png">
@@ -41,7 +41,6 @@
         <div class="col-md-4 col-md-offset-4">
           <div><!--intro--> 
             <h2>Welcome to Nat's interactive resume!</h2>
-            <p class="girlNextDoorFont">Navigate around to learn more about me.</p>
             <div id="summary" class="summary girlNextDoorFont"></div>
           </div>
 
@@ -62,8 +61,8 @@
             <a href="mailto:nat.nantabutr@gmail.com" class="thumbnail">
               <img id="email_icon" src="img/email_icon.png" alt="email icon">
             </a>
-             <div>Contact Me:
-                <span class="">Email: nat.nantabutr@gmail.com</span>
+             <div class="PlaylistCaps">
+                <span class="">nat.nantabutr@gmail.com</span>
                 <span class="">Phone: 571-226-5691</span>
                 <span class="">Address: Alexandria VA 22315</span>
              </div>
@@ -94,30 +93,30 @@
       <div id="projects_dialog" title = "PROJECTS" ></div>
       <div id="skills_dialog" title = "SKILLS" ></div>
       <div id="credits_dialog" title = "CREDITS" ></div>
-      <div class="row">
-        <div class="col-md-4 col-sm-pull-right" id="pro_ex">PROFESSIONAL EXPERIENCE&nbsp;
-          <img src="img/working_icon.png">
+      <div class="row" id="allAboutMe">
+        <div class="col-md-4 col-sm-pull-right allAboutme" id="pro_ex"><span class="PlaylistCaps">PROFESSIONAL EXPERIENCE</span>
+          <img id="pro_exIcon" src="img/working_icon.png">
         </div>
-        <div class=".lower col-md-4 col-md-offset-4" id='edu'>EDUCATION&nbsp;
-          <img src="img/edu_icon.png">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-md-offset-3 col-sm-pull-right" id='pro_dev'>PROFESSIONAL DEVELOPMENT&nbsp;
-          <img src="img/dev_icon.png">
-        </div>
-        <div class="col-md-3 col-md-offset-3" id='other_info'>OTHER INFORMATION&nbsp;
-          <img src="img/moreInfo_icon.png">
+        <div class=".lower col-md-4 col-md-offset-4 allAboutme" id='edu'><span class="PlaylistCaps">EDUCATION</span>
+          <img id='eduIcon' src="img/edu_icon.png">
         </div>
       </div>
       <div class="row">
-        <div class="lower col-md-6 col-md-offset-3" id ='projects'>PROJECTS&nbsp;
-          <img src="img/project_icon.png">
+        <div class="col-md-3 col-md-offset-3 col-sm-pull-right allAboutme" id='pro_dev'><span class="PlaylistCaps">PROFESSIONAL DEVELOPMENT</span>
+          <img id='pro_devIcon' src="img/dev_icon.png">
+        </div>
+        <div class="col-md-3 col-md-offset-3 allAboutme" id='other_info'><span class="PlaylistCaps">OTHER INFORMATION</span>
+          <img id='other_infoIcon' src="img/moreInfo_icon.png">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-pull-right" id='skills'>SKILLS&nbsp;
-          <img src="img/skills_icon.png">
+        <div class="lower col-md-6 col-md-offset-3 allAboutme" id ='projects'><span class="PlaylistCaps">PROJECTS</span>
+          <img id ='projectsIcon' src="img/project_icon.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-pull-right allAboutme" id='skills'><span class="PlaylistCaps">SKILLS</span>
+          <img id='skillsIcon' src="img/skills_icon.png">
         </div>
       </div>
     

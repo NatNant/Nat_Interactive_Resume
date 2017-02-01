@@ -87,19 +87,28 @@
 }
 
 @font-face {
-    font-family: "girlNextDoor";
-    src:url("../font/The_Girl_Next_Door/TheGirlNextDoor.ttf");
+    font-family: "GloriaHallelujah";
+    src:url("../font/Gloria_Hallelujah/GloriaHallelujah.ttf");
 }
 
 
 body{
-	font-family: 'PlaylistCaps' !important;
 	height:100%;
+  font-family: 'GloriaHallelujah' !important;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'PlaylistCaps' !important;
+}
+h5{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
 }
 
 img#me_pic{
 	max-height: 100%;
 	max-width:100%;
+  margin-right: 10px;
 	float: left;
 }
 .navbar-brand{
@@ -113,8 +122,8 @@ img#me_pic{
 
 
 /*Newly created*/
-.girlNextDoorFont{
-	font-family: 'girlNextDoor', cursive !important;
+.PlaylistCaps{
+	font-family: 'PlaylistCaps' !important;
 }
 p{
 	font-size: 1.2vw;
@@ -182,6 +191,19 @@ p{
    border-radius: 10%;
 
 }
+
+#pro_ex:hover ,#edu:hover ,#pro_dev:hover,  #other_info:hover, #projects:hover ,#skills:hover,
+#pro_ex:focus ,#edu:focus ,#pro_dev:focus,  #other_info:focus, #projects:focus ,#skills:focus{
+   background-color: transparent;
+   border: solid;
+   border-color: #806A10;
+}
+
+
+.allAboutme:hover img, .allAboutme:focus img{
+}
+
+
 
 /*for page1*/
 #linkto{
@@ -252,7 +274,6 @@ p{
 
 #footer{
 	position: absolute;
-	
 }
 
 /*

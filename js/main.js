@@ -1,4 +1,5 @@
 var main = function() {
+  //initail setting the screen height
   setDynamicTopPadding();
   
   //everytime window resize will change body padding dynamically
@@ -9,7 +10,6 @@ var main = function() {
   //for collapse nav
   collapseNav();
   //INCLUDE .HTML from another file
-
   /*
   $.get("pages/summary.html", function(data) {
     $(".summary").html(data);
@@ -24,9 +24,14 @@ var main = function() {
             }
     });
 
-
-
-
+    $('#summary_panel').hide();
+    $('#linkTo').hide();
+    $('#linkTo').slideDown(2000,function(){
+      $('#summary_panel').show('blind',2000);
+    });
+   
+    
+    
 
 
     //to set the long scrolling effect

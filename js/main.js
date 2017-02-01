@@ -27,6 +27,7 @@ var main = function() {
     setDialog('#other_info_dialog');
     setDialog('#projects_dialog');
     setDialog('#skills_dialog');
+    setDialog('#credits_dialog');
 
     //to set the effect when clicking on the icon
     $('#pro_ex').click(function(){
@@ -49,8 +50,6 @@ var main = function() {
       $(this).hide( "clip", {horizFirst: true }, 1000 );
       $(this).show( "clip", {horizFirst: true }, 1000,openDialog('#skills_dialog') );
     });
-
-    
 
     return false;
 };  
@@ -133,8 +132,11 @@ function openDialog(dialogID_param){
     case '#projects_dialog': 
       pageToLoad = 'pages/projects.html';
     break;
-  default:
+    case '#skills_dialog': 
       pageToLoad = 'pages/skills.html';
+    break;
+  default:
+      pageToLoad = 'pages/credits.html';
 }
 
   $(dialogID).load(pageToLoad, function() {

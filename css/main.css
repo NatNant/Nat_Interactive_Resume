@@ -248,10 +248,10 @@ p{
 
 #pro_ex img, #edu img, #pro_dev img, #projects img, #other_info img,#skills img{
 	max-height: 22%;
+  height: 20vmin;
   display: block;
   margin-left: auto;
   margin-right: auto;
-	
 }
 
 

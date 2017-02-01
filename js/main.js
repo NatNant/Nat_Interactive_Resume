@@ -9,9 +9,25 @@ var main = function() {
   //for collapse nav
   collapseNav();
   //INCLUDE .HTML from another file
+
+  /*
   $.get("pages/summary.html", function(data) {
     $(".summary").html(data);
     });
+  */
+   $(".summary").load("pages/summary.html", function(responseTxt, statusTxt, jqXHR){
+            if(statusTxt == "success"){
+                alert("New content loaded successfully!");
+            }
+            if(statusTxt == "error"){
+                alert("Error: " + jqXHR.status + " " + jqXHR.statusText);
+            }
+    });
+
+
+
+
+
 
     //to set the long scrolling effect
     $('a[href*="#"]:not([href="#"])').on('click', function() {

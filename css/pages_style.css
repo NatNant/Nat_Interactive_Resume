@@ -1,0 +1,18 @@
+.ui-widget-content{
+	margin-right: 2em;
+	margin-left: 2em;
+	padding: 2em;
+	background: rgba(45, 27, 0, .8);
+	color: white;
+	border: none;
+}
+
+
+.pro_ex_dialog{
+	padding: 5em;
+}
+
+ .ui-dialog-titlebar-close{
+	float: right;
+	color: #2D1B00;
+}

@@ -9,8 +9,10 @@ firstPage_dandelion - https://pixabay.com/en/back-light-dandelion-sun-nature-170
 
  https://pixabay.com/en/it-business-icons-computers-722950/
 
- project_icon_orange : @ fooljoe - https://www.onlinewebfonts.com/icon/476041 <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Computer Free Icon</a> is licensed by CC BY 3.0</div>
- @ Malak Riahi - https://www.onlinewebfonts.com/icon/163867 <div>Icon made from <a href="https://www.onlinewebfonts.com/icon/163867">Jiaruwomen Free Icon</a> is licensed by CC BY 3.0</div>
+ 
+ 
+
+
  @ Federico Sibella<div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Brain Nervous System Mind Head Anatomy Free Icon</a> is licensed by CC BY 3.0</div>
 
  github_icon   @ Ceccuz <div>Icon made from <a href="https://www.onlinewebfonts.com/icon/264461">Icon Fonts</a> is licensed by CC BY 3.0</div>
@@ -18,3 +20,15 @@ firstPage_dandelion - https://pixabay.com/en/back-light-dandelion-sun-nature-170
  email_icon @ Malak Riahi  <div>Icon made from <a href="https://www.onlinewebfonts.com/icon/16495">Email Free Icon</a> is licensed by CC BY 3.0</div> 
 
  Linkin_icon @ William Belfry<div>Icon made from <a href="https://www.onlinewebfonts.com/icon/84987">Linkin Free Icon</a> is licensed by CC BY 3.0</div> 
+
+ working_icon  Working With Laptop Free Icon @ Эдуард Черных https://www.onlinewebfonts.com/icon/38077
+
+ edu_icon Education Free Icon @ matiashernani  https://www.onlinewebfonts.com/icon/297437
+
+ dev_icon  Dev Development  @ TERRI  https://www.onlinewebfonts.com/icon/63904
+
+ project_icon : @ xavbonmar  - https://www.onlinewebfonts.com/icon/489478 <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Computer Free Icon</a> is licensed by CC BY 3.0</div>
+
+ moreInfo_icon @ Malak Riahi - https://www.onlinewebfonts.com/icon/163867 <div>Icon made from <a href="https://www.onlinewebfonts.com/icon/163867">Jiaruwomen Free Icon</a> is licensed by CC BY 3.0</div>
+
+skills_icon : @ Jyri People Men Network Ideas Brainstorm  https://www.onlinewebfonts.com/icon/502230

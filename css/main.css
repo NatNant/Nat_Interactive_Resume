@@ -54,7 +54,6 @@
       float: right;
   }
 }
-
 .lower {
   clear: left;
 }
@@ -65,40 +64,17 @@
 	background-color: transparent; 
 	border: none; 
 }
-
 @font-face {
-    font-family: "ONEDAY";
-    src:url("../font/Oneday-Font/ONEDAY.ttf");
-    src:url("../font/Oneday-Font/ONEDAY.otf");
-}
-
-@font-face {
-    font-family: "KingBasil";
-    src:url("../font/King-Basil-Lite-Free/King-Basil-Lite.otf");
-}
-
-@font-face {
-    font-family: "PlaylistCaps";
-    src:url("../font/Playlist-Font_pixelo/PlaylistCaps.otf");
-}
-@font-face {
-    font-family: "PlaylistScript";
-    src:url("../font/Playlist-Font_pixelo/PlaylistScript.otf");
-}
-
-@font-face {
-    font-family: "GloriaHallelujah";
-    src:url("../font/Gloria_Hallelujah/GloriaHallelujah.ttf");
+    font-family: "UbuntuMonoRegular";
+    src:url("../font/Ubuntu_Mono/UbuntuMono-Regular.ttf");
 }
 
 
 body{
 	height:100%;
-  font-family: 'GloriaHallelujah' !important;
+  font-family: 'UbuntuMonoRegular' , monospace !important;
 }
-h1, h2, h3, h4, h5{
-  font-family: 'PlaylistCaps' !important;
-}
+
 h5{
   margin-top: 0;
   margin-bottom: 0;
@@ -147,6 +123,13 @@ p{
 	width:3vw;	
 }
 /*for all pages*/
+.hr_bottom{
+  border-bottom: 2px solid rgba(148, 51, 31, 1);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
 #page1, #page2, #page3{
   position: relative;
   height: 100%;

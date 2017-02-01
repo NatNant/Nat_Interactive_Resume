@@ -17,10 +17,10 @@ var main = function() {
   */
    $(".summary").load("pages/summary.html", function(responseTxt, statusTxt, jqXHR){
             if(statusTxt == "success"){
-                alert("New content loaded successfully!");
+                //alert("New content loaded successfully!");
             }
             if(statusTxt == "error"){
-                alert("Error: " + jqXHR.status + " " + jqXHR.statusText);
+               // alert("Error: " + jqXHR.status + " " + jqXHR.statusText);
             }
     });
 

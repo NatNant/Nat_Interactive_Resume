@@ -32,3 +32,28 @@ firstPage_dandelion - https://pixabay.com/en/back-light-dandelion-sun-nature-170
  moreInfo_icon @ Malak Riahi - https://www.onlinewebfonts.com/icon/163867 <div>Icon made from <a href="https://www.onlinewebfonts.com/icon/163867">Jiaruwomen Free Icon</a> is licensed by CC BY 3.0</div>
 
 skills_icon : @ Jyri People Men Network Ideas Brainstorm  https://www.onlinewebfonts.com/icon/502230
+
+
+Pegasus Winged Horse Black Side View Silhouette Shape Free Icon @ lucaslememoura https://www.onlinewebfonts.com/icon/73293
+
+"CC BY"
+
+Js https://commons.wikimedia.org/wiki/File:Javascript_badge.svg
+
+Css3 @https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg
+
+Angular full color logo.svg  @ https://commons.wikimedia.org/wiki/File:Angular_full_color_logo.svg
+
+HTML5 logo and wordmark.svg @ https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.
+
+Sass Logo Color.svg @https://commons.wikimedia.org/wiki/File%3ASass_Logo_Color.svg
+
+Fondo Java.png https://commons.wikimedia.org/wiki/File:Fondo_Java.png
+
+Logo jQuery.svg https://commons.wikimedia.org/wiki/File:Logo_jQuery.svg
+
+Jquery-terminal-emulator-logo.svg  https://commons.wikimedia.org/wiki/File:Jquery-terminal-emulator-logo.svg
+
+Boostrap logo.svg https://commons.wikimedia.org/wiki/File:Boostrap_logo.svg
+
+Javascript badge.svg https://commons.wikimedia.org/wiki/File:Javascript_badge.svg

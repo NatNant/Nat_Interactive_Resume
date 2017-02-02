@@ -11,14 +11,9 @@ var main = function() {
   collapseNav();
 
   //INCLUDE .HTML from another file
-   $(".summary").load("pages/summary.html", function(responseTxt, statusTxt, jqXHR){
-            if(statusTxt == "success"){
-                //alert("New content loaded successfully!");
-            }
-            if(statusTxt == "error"){
-               // alert("Error: " + jqXHR.status + " " + jqXHR.statusText);
-            }
-    });
+  $.ajax({url: "pages/summary.html", success: function(result){
+            $('.summary').html(result);
+  } , cache: false});
 
     //To animate the first page
     $('#summary_panel').hide();
@@ -34,15 +29,7 @@ var main = function() {
           scrollTop: target.offset().top
         }, 1500, function(){ });
     });
-
-    setDialog('#pro_ex_dialog');
-    setDialog('#edu_dialog');
-    setDialog('#pro_dev_dialog');
-    setDialog('#other_info_dialog');
-    setDialog('#projects_dialog');
-    setDialog('#skills_dialog');
-    setDialog('#credits_dialog');
-
+   
     //to set the effect when clicking on the icon
     $('#pro_ex').click(function(){
       $(this).effect( "slide", 1000 ,function(){
@@ -76,7 +63,6 @@ var main = function() {
         openDialog('#skills_dialog');
       });
     });
-
     return false;
 };  
 
@@ -131,12 +117,20 @@ function setDialog(dialogID){
                autoOpen: false, 
                hide: "puff",
                show : "slide",
-               width: 'auto'             
+               width: 'auto',
+               close: function(event,ui) {
+                //alert ('destroying');
+                $(dialogID).empty();
+                $(dialogID).dialog('destroy');
+               }            
   });
 };
 
 //To create a popup for allAboutME
 function openDialog(dialogID_param){ 
+
+  setDialog(dialogID_param);
+
   var dialogID = dialogID_param ;
   var pageToLoad = '';
   switch (dialogID) { 
@@ -162,12 +156,10 @@ function openDialog(dialogID_param){
       pageToLoad = 'pages/credits.html';
 }
 
-  $(dialogID).load(pageToLoad, function() {
-        $(dialogID).dialog("open");
-  });
-//}
+  $.ajax({url: pageToLoad, success: function(result){
+            $(dialogID).html(result);
+            $(dialogID).dialog("open");
+  } , cache: false});
 };
-
-
 
 $(document).ready(main);

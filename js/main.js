@@ -52,24 +52,36 @@ var main = function() {
 
     //to set the effect when clicking on the icon
     $('#pro_ex').click(function(){
-      $('#pro_exIcon').effect( "slide", 1000 ,openDialog("#pro_ex_dialog"));
+      $(this).effect( "slide", 1000 ,function(){
+        openDialog("#pro_ex_dialog");
+      });
     });
     $('#edu').click(function(){
-      $('#eduIcon').slideUp(1000).slideDown(1000,openDialog("#edu_dialog"));
+      $(this).slideUp(1000).slideDown(1000, function(){
+          openDialog("#edu_dialog");
+      });
     });
     $('#pro_dev').click(function(){
-      $('#pro_devIcon').fadeOut(1000).fadeIn(1000,openDialog('#pro_dev_dialog'));
+      $(this).fadeOut(1000).fadeIn(1000, function(){
+        openDialog('#pro_dev_dialog');
+      });
     });
     $('#other_info').click(function(){
-      $('#other_infoIcon').effect("slide", { direction: "right" }, 1000,openDialog('#other_info_dialog'));
+      $(this).effect("slide", { direction: "right" }, 1000, function(){
+        openDialog('#other_info_dialog');
+      });
     });
     $('#projects').click(function(){
-      $('#projectsIcon').hide( "fold", {horizFirst: true }, 1000 );
-      $('#projectsIcon').show( "fold", {horizFirst: true }, 1000 ,openDialog('#projects_dialog'));
+      $(this).hide( "fold", {horizFirst: true }, 1000 );
+      $(this).show( "fold", {horizFirst: true }, 1000 , function(){
+        openDialog('#projects_dialog');
+      });
     });
     $('#skills').click(function(){
-      $('#skillsIcon').hide( "clip", {horizFirst: true }, 1000 );
-      $('#skillsIcon').show( "clip", {horizFirst: true }, 1000,openDialog('#skills_dialog') );
+      $(this).hide( "clip", {horizFirst: true }, 1000 );
+      $(this).show( "clip", {horizFirst: true }, 1000, function(){
+        openDialog('#skills_dialog');
+      });
     });
 
     return false;

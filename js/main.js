@@ -101,14 +101,20 @@ function getScroll(param1, callback){
 
 //to create a collapse navigation effect
 function collapseNav(){
+
   var navbarButton_li = $('#navbarButton_li');
   navbarButton_li.css('list-style', 'none');
+  
+  $('#navbarButton').click(function(){
+  $(this).next().toggle()});
+  /* 
     navbarButton_li.click(function(){
       $(this).find("ul").css('display', 'block');
     });
   navbarButton_li.mouseleave(function(){
       $(this).find("ul").css('display', 'none');
     });
+  */
 };
 
 //To initailize a dialog

@@ -177,6 +177,14 @@ p{
   margin-right: auto;
 }
 
+#skill_animation_panel{
+  border : 2px white solid;
+}
+
+#skill_animation_panel img{
+  max-height: 200px;
+  max-width: 200px;
+}
 
 
 #page3_inner{

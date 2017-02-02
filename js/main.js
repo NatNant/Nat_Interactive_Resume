@@ -9,12 +9,8 @@ var main = function() {
 
   //for collapse nav
   collapseNav();
+
   //INCLUDE .HTML from another file
-  /*
-  $.get("pages/summary.html", function(data) {
-    $(".summary").html(data);
-    });
-  */
    $(".summary").load("pages/summary.html", function(responseTxt, statusTxt, jqXHR){
             if(statusTxt == "success"){
                 //alert("New content loaded successfully!");
@@ -24,17 +20,14 @@ var main = function() {
             }
     });
 
+    //To animate the first page
     $('#summary_panel').hide();
     $('#linkTo').hide();
     $('#linkTo').slideDown(2000,function(){
       $('#summary_panel').show('blind',2000);
     });
    
-    
-    
-
-
-    //to set the long scrolling effect
+   //to set the long scrolling effect
     $('a[href*="#"]:not([href="#"])').on('click', function() {
       var target = $(this.hash);
       $('html, body').animate({
@@ -87,7 +80,7 @@ var main = function() {
     return false;
 };  
 
-
+//To set a dynamic height depended on the device screen
 function setDynamicTopPadding(){  
   var $topNav_Container = $('div#topNav_Container');
   var topNav_Container_h = $topNav_Container.height();
@@ -98,8 +91,7 @@ function setDynamicTopPadding(){
   $("#page1_inner").css("margin-top", topNav_Container_h+'px');
 
   var windowHeight = $(window).height();
-  //var windowWidth = $(window).width();
-
+ 
   //for page 1
   var page1_inner_h = windowHeight - topNav_Container_h;
   $('#page1_inner').css("height", page1_inner_h+'px');
@@ -133,6 +125,7 @@ function collapseNav(){
     });
 };
 
+//To initailize a dialog
 function setDialog(dialogID){
   $(dialogID).dialog({
                autoOpen: false, 
@@ -142,11 +135,8 @@ function setDialog(dialogID){
   });
 };
 
+//To create a popup for allAboutME
 function openDialog(dialogID_param){ 
-//if($(dialogID).dialog("isOpen") === false){
-//  alert('open'); 
-//}
-//else{
   var dialogID = dialogID_param ;
   var pageToLoad = '';
   switch (dialogID) { 

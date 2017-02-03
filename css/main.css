@@ -206,6 +206,22 @@ p{
 	position: absolute;
 }
 
+#skill_animation_panel  img:hover{
+  animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {transform: rotateY(0deg);
+ -webkit-transform:rotateY(0deg);/* Safari */
+  }
+    to {transform: rotateY(360deg);
+-webkit-transform: rotateY(360deg); /* Safari */
+  }
+}
+
 /*
  #container { display:block; }
 

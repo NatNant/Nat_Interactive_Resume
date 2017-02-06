@@ -226,7 +226,9 @@ p{
 }
 
 #footer{
-	position: absolute;
+	 background-color: rgba(148, 51, 31, 0.5);
+   bottom:0;
+   width:100%;
 }
 
 #skill_animation_panel  img:hover{

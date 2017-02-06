@@ -11,9 +11,8 @@ var main = function() {
   collapseNav();
 
   //INCLUDE .HTML from another file
-  $.ajax({url: "pages/summary.html", success: function(result){
-            $('.summary').html(result);
-  } , cache: false});
+  getPage('pages/summary.html', '#summary_section');
+  getPage('pages/timeline.html', '#timeline_section');
 
     //To animate the first page
     $('#summary_panel').hide();
@@ -72,6 +71,7 @@ function setDynamicTopPadding(){
   var topNav_Container_h = $topNav_Container.height();
 
   $("#topNav").css("height", topNav_Container_h+'px');
+  $("#footer").css("height", topNav_Container_h+'px');
   $('.page2').css("height", topNav_Container_h+'px');
   $('.page3').css("height", topNav_Container_h+'px');
   $("#page1_inner").css("margin-top", topNav_Container_h+'px');
@@ -85,7 +85,7 @@ function setDynamicTopPadding(){
   //for page 2
   $('#page2_inner').css("height", windowHeight - topNav_Container_h+'px');
 
-  //for page _
+  //for page 3
   $('#page3_inner').css("height", windowHeight - topNav_Container_h+'px');
 }
 
@@ -134,7 +134,6 @@ function setDialog(dialogID){
 
 //To create a popup for allAboutME
 function openDialog(dialogID_param){ 
-
   setDialog(dialogID_param);
 
   var dialogID = dialogID_param ;
@@ -165,6 +164,12 @@ function openDialog(dialogID_param){
   $.ajax({url: pageToLoad, success: function(result){
             $(dialogID).html(result);
             $(dialogID).dialog("open");
+  } , cache: false});
+};
+
+function getPage(page_param, sectionID_param){
+    $.ajax({url: page_param, success: function(result){
+            $(sectionID_param).html(result);
   } , cache: false});
 };
 

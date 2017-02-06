@@ -4,11 +4,12 @@
   <title>Nat Resume</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/timeline.css">
+
   <link rel="stylesheet" src="jquery-ui-1.12-2.1/jquery-ui.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/pages_style.css">
   <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/timeline.css">
 
  
 
@@ -25,6 +26,7 @@
           <ul class="dropdown-menu" id='collapseNav'>
             <li class="menu-item"><a href="#page1">home</a></li>
             <li class="menu-item"><a href="#page2">All About ME</a></li>
+            <li class="menu-item"><a href="#page3">My Timeline</a></li>
           </ul>
         </li>        
       </div>   
@@ -40,7 +42,7 @@
         <div class="col-md-4 col-md-offset-4 hr_bottom" id="summary_panel">
           <div><!--intro--> 
             <h2>Welcome to Nat's interactive resume!</h2>
-            <div class="summary"></div><!--summary.html, called Ajax in  main.js--> 
+            <div id="summary_section"></div><!--summary.html, called Ajax in  main.js--> 
           </div>
         </div>
       </div>
@@ -130,26 +132,27 @@
   </div><!--end page2_INNER--> 
 </div><!--end page2--> 
 
-
-
 <div id="page3">
-  <div class="page3"> 
-    <a id="contact" class="smooth"></a>
+  <div class="page3">
   </div>
-  
-
+    <div class="container-fluid" id="page3_inner"> 
+      <div id="timeline_section"></div><!--summary.html, called Ajax in  main.js--> 
+      <div id="footer" class="container-fluid" >
+   <div>Icons made from <a href="http://www.onlinewebfonts.com">www.onlinewebfonts.com</a> is licensed by CC BY 3.0<br>
+    <a id="credits"  href="pages/credits.html">Click here for the full credit list</a></div>
+    </div>
+  </div>
 </div><!--end page3--> 
 
-<footer id="footer" class="container-fluid" >
-   <div>Icons made from <a href="http://www.onlinewebfonts.com">www.onlinewebfonts.com</a> is licensed by CC BY 3.0</div>
-   <div><a id="credits"  href="javascript:void(0);" onclick="openDialog('#credits_dialog');">Click here for the full credit list</a></div>
-</footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.smooth-scroll.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="jquery-ui-1.12-2.1/external/jquery/jquery.js"></script>
-<script src="jquery-ui-1.12-2.1/jquery-ui.min.js"></script>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="jquery-ui-1.12-2.1/external/jquery/jquery.js"></script>
+  <script src="jquery-ui-1.12-2.1/jquery-ui.min.js"></script>
 </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 @media screen and (max-width: 700px) {
   .timeline ul li.timeline_block{
-    margin-left: 10px;
+    margin: 0;
   }
   div.event {
     width: 200px !important;
@@ -41,6 +41,9 @@
   margin: 0 auto;
   text-align: center; 
   padding-top: 15px;
+}
+.tl_label{
+  font-size: 20px;
 }
 
 .timeline div.year_bl{
@@ -86,6 +89,25 @@ padding-top: 25px;
   border-style: solid;
 }
 
+.timeline .event:hover{
+  animation: glowBoxInner 1s ease-in-out infinite alternate;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+.timeline .event:hover time{
+  font-size: 30px;
+}
+
+
+@keyframes glowBoxInner{
+    to {
+           -moz-box-shadow:    inset 0 0 30px white;
+           -webkit-box-shadow: inset 0 0 30px white;
+           box-shadow:         inset 0 0 30px white;
+    }
+}
+
 .timeline .right {
   left: 45px;
   background: #F45B69;
@@ -103,4 +125,16 @@ padding-top: 25px;
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #249cd8;
+}
+
+/*For hidding and displaying information in each block*/
+.tl_hidden{
+  opacity:0;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease .15s;
+}
+.tl_display{
+  opacity:1;
+  height: 100%;
 }

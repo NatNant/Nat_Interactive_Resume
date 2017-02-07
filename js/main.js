@@ -62,6 +62,11 @@ var main = function() {
         openDialog('#skills_dialog');
       });
     });
+
+    $(document.body).on("click", '.event',function() {
+           $(this).find(".tl_info").toggleClass( "tl_display");         
+    });
+
     return false;
 };  
 
@@ -101,7 +106,6 @@ function getScroll(param1, callback){
 
 //to create a collapse navigation effect
 function collapseNav(){
-
   var navbarButton_li = $('#navbarButton_li');
   navbarButton_li.css('list-style', 'none');
   
@@ -172,5 +176,6 @@ function getPage(page_param, sectionID_param){
             $(sectionID_param).html(result);
   } , cache: false});
 };
+
 
 $(document).ready(main);

@@ -115,27 +115,18 @@ p{
 
 .allAboutme:hover, .allAboutme:focus{
   background-color: rgba(0, 0, 0, 0.6) !important;
-  width: 25vmin;
-  height: 25vmin;
-  border-radius:50%;
   border: solid;
   border-color: #806A10;
   filter: alpha(opacity=0);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
- 
 }
 
 .allAboutme:hover img, .allAboutme:hover img{
-  max-height: 50% !important;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  
+ 
   animation: glowShadow .5s ease-in-out infinite alternate;
    -webkit-animation: glowShadow .5s ease-in-out infinite alternate;
   -moz-animation: glowShadow .5s ease-in-out infinite alternate; 
-   position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
-    margin: auto;
+   
 }
 .text {
   color: black;

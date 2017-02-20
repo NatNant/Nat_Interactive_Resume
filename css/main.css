@@ -72,7 +72,7 @@ p{
   position: relative;
   height: 100%;
 }
-#page1:after, #page2:after{
+#page1:after, #page2:after, #page3 section:after{
   content: ' ';
     display: block;
     position: absolute;
@@ -199,11 +199,12 @@ p{
   max-height: 200px;
 }
 
-
+#page3 section:after{ 
+  background-image: url('../img/thirdPage_dandelion.jpg');    
+}
 
 #page3_inner{
 	min-height: 200px;
-	background-color: transparent;
 }
 
 .redOverlay{

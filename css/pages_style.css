@@ -7,7 +7,6 @@
 	border: none;
 }
 
-
 .pro_ex_dialog{
 	padding: 5em;
 }
@@ -15,4 +14,16 @@
  .ui-dialog-titlebar-close{
 	float: right;
 	color: #2D1B00;
+}
+
+
+div span.ui-dialog-title{
+	font-size: 4vh !important;
+	color: #F45B69 !important;
+}
+
+.other_info_dialog ul, .pro_dev_dialog {
+	text-align: center;
+	list-style-position:inside;
+	
 }
